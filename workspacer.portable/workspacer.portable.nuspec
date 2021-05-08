@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>workspacer.portable</id>
+    <version>0.9.10</version>
+    <packageSourceUrl>https://github.com/sitiom/chocolatey-packages/tree/main/workspacer.portable</packageSourceUrl>
+    <owners>sitiom</owners>
+    <!-- ============================== -->
+    <title>workspacer (Portable)</title>
+    <authors>Rick Button</authors>
+    <projectUrl>http://workspacer.org/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/sitiom/chocolatey-packages/main/icons/workspacer.png</iconUrl>
+    <copyright>Copyright (c) 2018 Rick Button</copyright>
+    <licenseUrl>https://github.com/rickbutton/workspacer/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/rickbutton/workspacer</projectSourceUrl>
+    <docsUrl>https://workspacer.org/</docsUrl>
+    <bugTrackerUrl>https://github.com/rickbutton/workspacer/issues</bugTrackerUrl>
+    <tags>workspacer tiling window manager workspaces</tags>
+    <summary>workspacer is a tiling window manager for Windows 10, similar in style and function to common unix tiling window managers (dwm, i3, xmonad).</summary>
+    <description><![CDATA[### a tiling window manager for Windows 10
+
+workspacer is a tiling window manager for Windows 10, similar in style and function to common unix tiling window managers (dwm, i3, xmonad).
+
+## features
+
+### ⚙️ configurable
+
+configured entirely with C#; you can customize every piece, and change any behavior!
+
+### 🕒 fast
+
+manipulates windows instantly, and doesn't add any significant overhead to Windows
+
+### 🚫 compatible
+
+doesn't use DLL injection to manipulate windows, so it less likely to break things!
+
+## contributing
+
+Thanks for your interest in contributing! Submit a pull request!
+]]></description>
+    <releaseNotes>https://workspacer.org/changelog/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
