@@ -4,6 +4,7 @@
 *.exe
 *.msi
 *.tar.gz
+*.tar.xz
 
 update_vars.ps1
 Update-AUPackages.md
