@@ -1,0 +1,21 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+1.  Download the tar archive:
+
+    x64: https://github.com/ImageOptim/gifski/releases/download/1.4.0/gifski-1.4.0.tar.xz
+
+2.  You can use one of the following methods to obtain the checksum:
+    - Use powershell function 'Get-FileHash'
+    - Use Chocolatey utility 'checksum.exe'
+    - Using AU:
+        Get-RemoteChecksum https://github.com/ImageOptim/gifski/releases/download/1.4.0/gifski-1.4.0.tar.xz
+
+3.  Compare to Checksum:
+
+    checksum64: 7192F47F1F0D085951B7C9B0EBF4AA0E4788CBA89C4F3129EA8D22325F45328E
+
+File 'LICENSE.txt' is obtained from:
+   https://github.com/ImageOptim/gifski/blob/main/LICENSE
