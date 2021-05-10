@@ -24,6 +24,7 @@ function global:au_GetLatest {
     @{
         URL64   = $url
         Version = $version
+        ReleaseNotes = "https://github.com/ImageOptim/gifski/releases/tag/${version}"
     }
 }
 
