@@ -23,7 +23,7 @@ function global:au_GetLatest {
 
     @{
         URL64   = $url
-        Version = $version.Replace('v', '')
+        Version = $version
     }
 }
 
