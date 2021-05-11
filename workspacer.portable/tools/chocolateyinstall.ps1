@@ -10,11 +10,17 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
-# Only shim workspacer.exe
-$files = Get-Childitem $toolsDir -include *.exe -exclude workspacer.exe -recurse
+# Do not shim exes
+$files = Get-Childitem $toolsDir -include *.exe -recurse
 foreach ($file in $files) {
   New-Item "$file.ignore" -type file -force
 }
 
+# Add workspacer shortcut
+$startMenuPath = [Environment]::GetFolderPath("CommonPrograms")
+Install-ChocolateyShortcut `
+  -ShortcutFilePath "$startMenuPath\workspacer\workspacer.lnk" `
+  -TargetPath "$toolsDir\workspacer.exe"
+
 # Don't need installer zip anymore
-rm $toolsDir\*.zip -ea 0 -force
+Remove-Item $toolsDir\*.zip -ea 0 -force

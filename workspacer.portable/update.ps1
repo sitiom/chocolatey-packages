@@ -1,4 +1,4 @@
-import-module au
+Import-Module au
 
 $releases = "https://github.com/rickbutton/workspacer/releases/latest"
 
@@ -18,8 +18,8 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     $regex = "workspacer-stable-.+\.zip$"
-    $url = "https://github.com$(($download_page.links | ? href -match $regex).href)"
-    $version = $url -split '/' | select -Last 1 -Skip 1
+    $url = "https://github.com$(($download_page.links | Where-Object href -match $regex).href)"
+    $version = $url -split '/' | Select-Object -Last 1 -Skip 1
 
     @{
         URL64 = $url
