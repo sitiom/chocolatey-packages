@@ -13,7 +13,7 @@
     <iconUrl>https://rawcdn.githack.com/sitiom/chocolatey-packages/main/icons/workspacer.png</iconUrl>
     <copyright>Copyright (c) 2018 Rick Button</copyright>
     <licenseUrl>https://github.com/rickbutton/workspacer/blob/master/LICENSE</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/rickbutton/workspacer</projectSourceUrl>
     <docsUrl>https://workspacer.org/</docsUrl>
     <bugTrackerUrl>https://github.com/rickbutton/workspacer/issues</bugTrackerUrl>

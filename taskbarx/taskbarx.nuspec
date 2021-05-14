@@ -7,13 +7,13 @@
     <packageSourceUrl>https://github.com/sitiom/chocolatey-packages/tree/main/taskbarx</packageSourceUrl>
     <owners>sitiom</owners>
     <!-- ============================== -->
-    <title>taskbarx</title>
+    <title>TaskbarX</title>
     <authors>Chris Andriessen</authors>
     <projectUrl>https://chrisandriessen.nl/taskbarx</projectUrl>
     <iconUrl>https://rawcdn.githack.com/sitiom/chocolatey-packages/main/icons/taskbarx.png</iconUrl>
     <copyright>Copyright (c) 2021 Chris Andriessen</copyright>
     <licenseUrl>https://github.com/ChrisAnd1998/TaskbarX/blob/master/LICENSE</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/ChrisAnd1998/TaskbarX</projectSourceUrl>
     <bugTrackerUrl>https://github.com/ChrisAnd1998/TaskbarX/issues</bugTrackerUrl>
     <tags>taskbarx windows automation windows-10 animations taskbar vbnet windows-taskbar taskbar-application center-taskbar-icons center-taskbar-windows</tags>
