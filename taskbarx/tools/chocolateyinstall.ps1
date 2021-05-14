@@ -19,5 +19,6 @@ foreach ($file in $files) {
   New-Item "$file.ignore" -type file -force
   Install-ChocolateyShortcut `
     -ShortcutFilePath "$startMenuPath\TaskbarX\$($file.BaseName).lnk" `
-    -TargetPath $file
+    -TargetPath $file `
+    -WorkingDirectory $toolsDir # Does not work without this parameter
 }
