@@ -1,0 +1,21 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+1.  Download the zip archive:
+
+    x64: https://github.com/ajeetdsouza/zoxide/releases/download/v0.7.0/zoxide-x86_64-pc-windows-msvc.zip
+
+2.  You can use one of the following methods to obtain the checksum:
+    - Use powershell function 'Get-FileHash'
+    - Use Chocolatey utility 'checksum.exe'
+    - Using AU:
+        Get-RemoteChecksum https://github.com/ajeetdsouza/zoxide/releases/download/v0.7.0/zoxide-x86_64-pc-windows-msvc.zip
+
+3.  Compare to Checksum:
+
+    checksum64: 2A8C287C62B84D56F2DA6970134807451E5A50DB8FAA70E4DE4EA56952F5B8EF
+
+File 'LICENSE.txt' is obtained from:
+    https://github.com/ajeetdsouza/zoxide/blob/main/LICENSE
