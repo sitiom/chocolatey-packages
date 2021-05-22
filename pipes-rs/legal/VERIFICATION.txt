@@ -1,0 +1,25 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+1.  Download the zip archive:
+
+    x64: https://github.com/lhvy/pipes-rs/releases/download/v1.4.3/pipes-rs-windows-x86_64.zip
+
+2.  You can use one of the following methods to obtain the checksum:
+    - Use powershell function 'Get-FileHash'
+    - Use Chocolatey utility 'checksum.exe'
+    - Using AU:
+        Get-RemoteChecksum https://github.com/lhvy/pipes-rs/releases/download/v1.4.3/pipes-rs-windows-x86_64.zip
+
+3.  Compare to Checksum:
+
+    checksum64: 68026834C3AC7D1E68985B2231A74FBCD3600ECBEF839794BC54088D4C5D7883
+
+File 'LICENSE-APACHE.txt' is obtained from:
+    https://github.com/lhvy/pipes-rs/blob/master/LICENSE-APACHE
+
+File 'LICENSE-MIT.txt' is obtained from:
+    https://github.com/lhvy/pipes-rs/blob/master/LICENSE-MIT
+
