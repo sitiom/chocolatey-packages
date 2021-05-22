@@ -17,9 +17,3 @@ in verifying that this package's contents are trustworthy.
 
     checksum64: 68026834C3AC7D1E68985B2231A74FBCD3600ECBEF839794BC54088D4C5D7883
 
-File 'LICENSE-APACHE.txt' is obtained from:
-    https://github.com/lhvy/pipes-rs/blob/master/LICENSE-APACHE
-
-File 'LICENSE-MIT.txt' is obtained from:
-    https://github.com/lhvy/pipes-rs/blob/master/LICENSE-MIT
-
