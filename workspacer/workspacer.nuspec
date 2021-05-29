@@ -47,4 +47,5 @@ Thanks for your interest in contributing! Submit a pull request!
         <dependency id="workspacer.install" version="0.9.10" />
     </dependencies>
   </metadata>
+  <files></files>
 </package>
