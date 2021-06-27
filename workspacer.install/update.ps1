@@ -1,6 +1,6 @@
 import-module au
 
-$releases = "https://github.com/rickbutton/workspacer/releases/latest"
+$releases = "https://github.com/workspacer/workspacer/releases/latest"
 
 function global:au_SearchReplace {
     @{
