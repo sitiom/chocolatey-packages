@@ -4,6 +4,10 @@ $releases = "https://github.com/dnSpyEx/dnSpy/releases/latest"
 
 function global:au_SearchReplace {
     @{
+        "$($Latest.PackageName).nuspec" = @{
+            "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
+        }
+
         ".\legal\VERIFICATION.txt" = @{
             "(?i)(\s+x32:).*"            = "`${1} $($Latest.URL32)"
             "(?i)(\s+x64:).*"            = "`${1} $($Latest.URL64)"
