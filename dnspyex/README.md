@@ -1,4 +1,4 @@
-# dnSpy - [Latest release](https://github.com/dnSpyEx/dnSpy/releases)
+# <img src="https://rawcdn.githack.com/sitiom/chocolatey-packages/main/icons/dnspyex.png" alt="icon" width="48" height="48"/> [![chocolatey](https://img.shields.io/chocolatey/v/dnspyex.svg?color=red&label=dnspyex)](https://chocolatey.org/packages/dnspyex)
 
 dnSpy is a debugger and .NET assembly editor. You can use it to edit and debug assemblies even if you don't have any source code available. Main features:
 
