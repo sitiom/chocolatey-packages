@@ -15,16 +15,15 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $request = [System.Net.WebRequest]::Create($releases)
+    $request.AllowAutoRedirect = $false
+    $response = $request.GetResponse()
+    $downloadUrl = $response.GetResponseHeader("Location")
     
-    $downloadUrl = ( $download_page.BaseResponse.ResponseUri.AbsoluteUri,
-        $download_page.BaseResponse.RequestMessage.RequestUri.AbsoluteUri)[$null -eq $download_page.BaseResponse.ResponseUri]
-    $version = $downloadUrl -split '/' | Select-Object -Last 1
-
-    $url = "https://github.com/ajeetdsouza/zoxide/releases/download/$version/zoxide-x86_64-pc-windows-msvc.zip"
+    $version = $downloadUrl -Split '/' | Select-Object -Last 1
 
     @{
-        URL64   = $url
+        URL64   = "https://github.com/ajeetdsouza/zoxide/releases/download/$version/zoxide-x86_64-pc-windows-msvc.zip"
         Version = $version.Replace('v','')
     }
 }

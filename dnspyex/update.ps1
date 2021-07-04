@@ -26,7 +26,7 @@ function global:au_GetLatest {
     $response = $request.GetResponse()
     $downloadUrl = $response.GetResponseHeader("Location")
     
-    $version = $downloadUrl -split '/' | Select-Object -Last 1
+    $version = $downloadUrl -Split '/' | Select-Object -Last 1
 
     @{
         URL32   = "https://github.com/dnSpyEx/dnSpy/releases/download/$version/dnSpy-net-win32.zip"

@@ -8,21 +8,22 @@ function global:au_SearchReplace {
             "(?i)(\s+x64:).*"                   = "`${1} $($Latest.URL64)"
             "(?i)(Get-RemoteChecksum).*"        = "`${1} $($Latest.URL64)"
             "(?i)(\s+checksum64:).*"            = "`${1} $($Latest.Checksum64)"
-          }
+        }
     }
 }
 
 function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-
-    $regex = "workspacer-stable-.+\.msi$"
-    $url = "https://github.com$(($download_page.links | ? href -match $regex).href)"
-    $version = $url -split '/' | select -Last 1 -Skip 1
+    $request = [System.Net.WebRequest]::Create($releases)
+    $request.AllowAutoRedirect = $false
+    $response = $request.GetResponse()
+    $downloadUrl = $response.GetResponseHeader("Location")
+    
+    $version = $downloadUrl -Split '/' | Select-Object -Last 1
 
     @{
-        URL64 = $url
+        URL64   = "https://github.com/workspacer/workspacer/releases/download/$version/workspacer-stable-$($version.Replace('v','')).msi"
         Version = $version.Replace('v','')
     }
 }

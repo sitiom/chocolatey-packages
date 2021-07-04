@@ -15,14 +15,15 @@ function global:au_SearchReplace {
 function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-
-    $regex = "workspacer-stable-.+\.zip$"
-    $url = "https://github.com$(($download_page.links | Where-Object href -match $regex).href)"
-    $version = $url -split '/' | Select-Object -Last 1 -Skip 1
+    $request = [System.Net.WebRequest]::Create($releases)
+    $request.AllowAutoRedirect = $false
+    $response = $request.GetResponse()
+    $downloadUrl = $response.GetResponseHeader("Location")
+    
+    $version = $downloadUrl -Split '/' | Select-Object -Last 1
 
     @{
-        URL64 = $url
+        URL64   = "https://github.com/workspacer/workspacer/releases/download/$version/workspacer-stable-$($version.Replace('v','')).zip"
         Version = $version.Replace('v','')
     }
 }
