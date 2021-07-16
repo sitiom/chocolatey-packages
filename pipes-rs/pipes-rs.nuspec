@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pipes-rs</id>
-    <version>1.4.3</version>
+    <version>1.4.4</version>
     <packageSourceUrl>https://github.com/sitiom/chocolatey-packages/tree/main/pipes-rs</packageSourceUrl>
     <owners>sitiom</owners>
     <!-- ============================== -->
