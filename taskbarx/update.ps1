@@ -29,8 +29,8 @@ function global:au_GetLatest {
     $version = $downloadUrl -Split '/' | Select-Object -Last 1
 
     @{
-        URL32   = "https://github.com/ChrisAnd1998/TaskbarX/releases/download/$version/TaskbarX_$version_x86.zip"
-        URL64   = "https://github.com/ChrisAnd1998/TaskbarX/releases/download/$version/TaskbarX_$version_x64.zip"
+        URL32   = "https://github.com/ChrisAnd1998/TaskbarX/releases/download/$version/TaskbarX_${version}_x86.zip"
+        URL64   = "https://github.com/ChrisAnd1998/TaskbarX/releases/download/$version/TaskbarX_${version}_x64.zip"
         Version = $version.Replace('v','')
         ReleaseNotes = "https://github.com/ChrisAnd1998/TaskbarX/releases/tag/$version"
     }
