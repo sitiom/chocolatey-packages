@@ -23,7 +23,7 @@ function global:au_GetLatest {
     $version = $downloadUrl -Split '/' | Select-Object -Last 1
 
     @{
-        URL64   = "https://github.com/workspacer/workspacer/releases/download/$version/workspacer-stable-$($version.Replace('v','')).zip"
+        URL64   = "https://github.com/workspacer/workspacer/releases/download/$version/workspacer-$($version.Replace('v',''))-stable.zip"
         Version = $version.Replace('v','')
     }
 }

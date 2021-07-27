@@ -4,7 +4,7 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  fileFullPath64 = "$toolsDir\workspacer-stable-$env:chocolateyPackageVersion.zip"
+  fileFullPath64 = "$toolsDir\workspacer-$env:chocolateyPackageVersion-stable.zip"
   destination    = $toolsDir
 }
 
