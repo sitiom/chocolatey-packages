@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>notion</id>
+    <version>2.0.16</version>
+    <packageSourceUrl>https://github.com/sitiom/chocolatey-packages/tree/main/notion</packageSourceUrl>
+    <owners>sitiom</owners>
+    <!-- ============================== -->
+    <title>Notion</title>
+    <authors>Notion Labs, Inc.</authors>
+    <projectUrl>https://www.notion.so/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/sitiom/chocolatey-packages/main/icons/notion.png</iconUrl>
+    <copyright>Copyright © 2021 Notion Labs, Inc.</copyright>
+    <licenseUrl>https://www.notion.so/Terms-and-Privacy-28ffdd083dc3473e9c2da6ec011b58ac</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.notion.so/Help-Support-Documentation-e040febf70a94950b8620e6f00005004</docsUrl>
+    <tags>notion writing notes collaborate organization kanban markdown task</tags>
+    <summary>The all-in-one workspace for your notes, tasks, wikis, and databases.</summary>
+    <description><![CDATA[Write, plan, collaborate, and get organized. Notion is all you need - in one tool.
+]]></description>
+    <releaseNotes>https://www.notion.so/What-s-New-157765353f2c4705bd45474e5ba8b46c</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
