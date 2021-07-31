@@ -11,7 +11,7 @@
     <authors>Notion Labs, Inc.</authors>
     <projectUrl>https://www.notion.so/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/sitiom/chocolatey-packages/main/icons/notion.png</iconUrl>
-    <copyright>Copyright © 2021 Notion Labs, Inc.</copyright>
+    <copyright>Copyright © 2021 Notion Labs&#44; Inc.</copyright>
     <licenseUrl>https://www.notion.so/Terms-and-Privacy-28ffdd083dc3473e9c2da6ec011b58ac</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://www.notion.so/Help-Support-Documentation-e040febf70a94950b8620e6f00005004</docsUrl>
