@@ -5,15 +5,15 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the zip archive:
 
-    x64: https://github.com/lhvy/pipes-rs/releases/download/v1.4.5/pipes-rs-windows-x86_64.zip
+    x64: https://github.com/lhvy/pipes-rs/releases/download/v1.4.6/pipes-rs-windows-x86_64.zip
 
 2.  You can use one of the following methods to obtain the checksum:
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/lhvy/pipes-rs/releases/download/v1.4.5/pipes-rs-windows-x86_64.zip
+        Get-RemoteChecksum https://github.com/lhvy/pipes-rs/releases/download/v1.4.6/pipes-rs-windows-x86_64.zip
 
 3.  Compare to Checksum:
 
-    checksum64: AB1ADC2B2245D131CD0C4EE80D84B6BB1089726D6B3D956E50C200B6F23BAFEB
+    checksum64: 844DA01C0995C28DDB3205B284CC1F0394EAF58528BE5CA7DF761351C299E757
 
