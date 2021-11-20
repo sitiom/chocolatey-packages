@@ -23,7 +23,7 @@ function global:au_GetLatest {
     $version = $downloadUrl -Split '/' | Select-Object -Last 1
 
     @{
-        URL64   = "https://github.com/ajeetdsouza/zoxide/releases/download/$version/zoxide-x86_64-pc-windows-msvc.zip"
+        URL64   = "https://github.com/ajeetdsouza/zoxide/releases/download/$version/zoxide-$version-x86_64-pc-windows-msvc.zip"
         Version = $version.Replace('v','')
     }
 }
