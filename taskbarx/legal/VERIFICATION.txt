@@ -5,19 +5,19 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the zip archive:
 
-    x32: https://github.com/ChrisAnd1998/TaskbarX/releases/download/1.7.5.0/TaskbarX_1.7.5.0_x86.zip
-    x64: https://github.com/ChrisAnd1998/TaskbarX/releases/download/1.7.5.0/TaskbarX_1.7.5.0_x64.zip
+    x32: https://github.com/ChrisAnd1998/TaskbarX/releases/download/1.7.6.0/TaskbarX_1.7.6.0_x86.zip
+    x64: https://github.com/ChrisAnd1998/TaskbarX/releases/download/1.7.6.0/TaskbarX_1.7.6.0_x64.zip
 
 2.  You can use one of the following methods to obtain the checksum:
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/ChrisAnd1998/TaskbarX/releases/download/1.7.5.0/TaskbarX_1.7.5.0_x64.zip
+        Get-RemoteChecksum https://github.com/ChrisAnd1998/TaskbarX/releases/download/1.7.6.0/TaskbarX_1.7.6.0_x64.zip
 
 3.  Compare to Checksum:
 
-    checksum32: 6F9D2F4F73BACD451174FB81C6F11CF4A064B873BC6CDBDD8139CE250BA1B7A1
-    checksum64: BB750EE3895E882F2AB2792ED2EF1A54598BFBF92F86D746481ADFE730CDABF2
+    checksum32: B2725F300B7D07DAC7856C375852BD69D4166035B4CC91132A592D210B9D6452
+    checksum64: 41E087DB6B0F16B6CA1EC2CBE52C416878136587547F4335CCE782881600E98D
 
 File 'LICENSE.txt' is obtained from:
    https://github.com/ChrisAnd1998/TaskbarX/blob/master/LICENSE
