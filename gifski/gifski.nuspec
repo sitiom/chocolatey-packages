@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>gifski</id>
-    <version>1.6.1</version>
+    <version>1.6.3</version>
     <packageSourceUrl>https://github.com/sitiom/chocolatey-packages/tree/main/gifski</packageSourceUrl>
     <owners>sitiom</owners>
     <!-- ============================== -->
@@ -44,7 +44,7 @@ Adding `--quality=90` may reduce file sizes a bit, but expect to lose a lot of q
 
 See `gifski -h` for more options.
 ]]></description>
-    <releaseNotes>https://github.com/ImageOptim/gifski/releases/tag/1.6.1</releaseNotes>
+    <releaseNotes>https://github.com/ImageOptim/gifski/releases/tag/1.6.3</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
