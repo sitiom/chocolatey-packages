@@ -21,8 +21,8 @@ jobs:
           github_context: ${{ toJson(github) }}
         run: |
           $context = $ENV:github_context | ConvertFrom-JSON
-          git config --global user.email "chocolatey@realdimensions.net"
-          git config --global user.name "Chocolatey"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
           git config --global core.safecrlf false
 
           $info = [PSCustomObject]@{
