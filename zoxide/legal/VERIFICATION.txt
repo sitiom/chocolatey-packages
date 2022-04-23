@@ -5,17 +5,17 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the zip archive:
 
-    x64: https://github.com/ajeetdsouza/zoxide/releases/download/v0.8.0/zoxide-v0.8.0-x86_64-pc-windows-msvc.zip
+    x64: https://github.com/ajeetdsouza/zoxide/releases/download/v0.8.1/zoxide-v0.8.1-x86_64-pc-windows-msvc.zip
 
 2.  You can use one of the following methods to obtain the checksum:
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/ajeetdsouza/zoxide/releases/download/v0.8.0/zoxide-v0.8.0-x86_64-pc-windows-msvc.zip
+        Get-RemoteChecksum https://github.com/ajeetdsouza/zoxide/releases/download/v0.8.1/zoxide-v0.8.1-x86_64-pc-windows-msvc.zip
 
 3.  Compare to Checksum:
 
-    checksum64: 7AD1C57F13AC68B849A8CC886E15D4DFB45E1E4B4E76B3B6B88BD0AE4AEE4BFF
+    checksum64: 285077162F1710EC8831B392798E3C23B944340F2C2BC59DBF6F3C9732080E9F
 
 File 'LICENSE.txt' is obtained from:
     https://github.com/ajeetdsouza/zoxide/blob/main/LICENSE
