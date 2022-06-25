@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>workspacer</id>
-    <version>0.9.10</version>
+    <version>0.9.11</version>
     <packageSourceUrl>https://github.com/sitiom/chocolatey-packages/tree/main/workspacer</packageSourceUrl>
     <owners>sitiom</owners>
     <!-- ============================== -->
@@ -44,7 +44,7 @@ Thanks for your interest in contributing! Submit a pull request!
     <releaseNotes>https://workspacer.org/changelog/</releaseNotes>
     <!-- ============================== -->
     <dependencies>
-        <dependency id="workspacer.install" version="0.9.10" />
+        <dependency id="workspacer.install" version="0.9.11" />
     </dependencies>
   </metadata>
   <files></files>
