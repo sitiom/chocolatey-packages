@@ -94,7 +94,7 @@ jobs:
         run: |
           7z a au_temp.zip $Env:TEMP\chocolatey\au\*
       - name: upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: au_temp
           path: au_temp.zip
