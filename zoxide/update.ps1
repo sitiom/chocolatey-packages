@@ -20,11 +20,11 @@ function global:au_GetLatest {
     $response = $request.GetResponse()
     $downloadUrl = $response.GetResponseHeader("Location")
     
-    $version = $downloadUrl -Split '/' | Select-Object -Last 1
+    $version = ($downloadUrl -Split '/' | Select-Object -Last 1).Replace('v','')
 
     @{
-        URL64   = "https://github.com/ajeetdsouza/zoxide/releases/download/$version/zoxide-$version-x86_64-pc-windows-msvc.zip"
-        Version = $version.Replace('v','')
+        URL64   = "https://github.com/ajeetdsouza/zoxide/releases/download/v$version/zoxide-$version-x86_64-pc-windows-msvc.zip"
+        Version = $version
     }
 }
 
