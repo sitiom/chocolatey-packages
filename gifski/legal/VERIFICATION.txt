@@ -5,17 +5,17 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the tar archive:
 
-    x64: https://github.com/ImageOptim/gifski/releases/download/1.7.1/gifski-1.7.1.tar.xz
+    x64: https://github.com/ImageOptim/gifski/releases/download/1.7.2/gifski-1.7.2.tar.xz
 
 2.  You can use one of the following methods to obtain the checksum:
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/ImageOptim/gifski/releases/download/1.7.1/gifski-1.7.1.tar.xz
+        Get-RemoteChecksum https://github.com/ImageOptim/gifski/releases/download/1.7.2/gifski-1.7.2.tar.xz
 
 3.  Compare to Checksum:
 
-    checksum64: 05C00D47847681542D299A8F9AA814D5C354D57B922C0A9B489D3BEEAB923EF0
+    checksum64: BEF32ECEA57F32436E33AAA905542D15B415844486B5ABC44B0763B941472637
 
 File 'LICENSE.txt' is obtained from:
    https://github.com/ImageOptim/gifski/blob/main/LICENSE
