@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>dnspyex</id>
-    <version>6.2.0</version>
+    <version>6.3.0</version>
     <packageSourceUrl>https://github.com/sitiom/chocolatey-packages/tree/main/dnspyex</packageSourceUrl>
     <owners>sitiom</owners>
     <!-- =============================== -->
@@ -97,7 +97,7 @@ See below for more features
 
 # [Credits](https://github.com/dnSpyEx/dnSpy/blob/master/dnSpy/dnSpy/LicenseInfo/CREDITS.txt)
 ]]></description>
-    <releaseNotes>https://github.com/dnSpyEx/dnSpy/releases/tag/v6.2.0</releaseNotes>
+    <releaseNotes>https://github.com/dnSpyEx/dnSpy/releases/tag/v6.3.0</releaseNotes>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
