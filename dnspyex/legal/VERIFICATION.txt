@@ -5,19 +5,19 @@ in verifying that this package's contents are trustworthy.
 
 1.  Download the zip archive:
 
-    x32: https://github.com/dnSpyEx/dnSpy/releases/download/v6.4.0/dnSpy-net-win32.zip
-    x64: https://github.com/dnSpyEx/dnSpy/releases/download/v6.4.0/dnSpy-net-win64.zip
+    x32: https://github.com/dnSpyEx/dnSpy/releases/download/v6.4.1/dnSpy-net-win32.zip
+    x64: https://github.com/dnSpyEx/dnSpy/releases/download/v6.4.1/dnSpy-net-win64.zip
 
 2.  You can use one of the following methods to obtain the checksum:
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
     - Using AU:
-        Get-RemoteChecksum https://github.com/dnSpyEx/dnSpy/releases/download/v6.4.0/dnSpy-net-win64.zip
+        Get-RemoteChecksum https://github.com/dnSpyEx/dnSpy/releases/download/v6.4.1/dnSpy-net-win64.zip
 
 3.  Compare to Checksum:
 
-    checksum32: 0CDC1519939A5C599DAFC5BED59EAB3D2372D0248F078D5C31B7F45445781CEF
-    checksum64: 4800A5C4C980D352B649515496A6A6B6CEB62CD48A3FA3AEF5454CAC2D50FF15
+    checksum32: 003FF7AA5F371D9E430850526EEDF36872109452A68B77E949D90A19F667DBA2
+    checksum64: 0B7DC7657D62134E6616FB1FEF367198E0CD7FA70112AC0AB46DA0FC0BD8B8ED
 
 File 'LICENSE.txt' is obtained from:
    https://github.com/dnSpyEx/dnSpy/blob/master/dnSpy/dnSpy/LicenseInfo/LICENSE.txt
