@@ -1,13 +1,13 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url64      = 'https://desktop-release.notion-static.com/Notion%20Setup%202.2.4.exe'
+$url64      = 'https://desktop-release.notion-static.com/Notion%20Setup%202.3.1.exe'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
   url64bit       = $url64
   softwareName   = 'notion*'
-  checksum64     = 'ba18604307593e8bfa4f90d1bc6cee56f3434e41f8d5a3edfc998277bd5ee18d'
+  checksum64     = 'e40d9e76ecd79e5d84be80307f54b22fcb5c6e9540960d383626dc6a29c16ac0'
   checksumType64 = 'sha256'
   silentArgs     = '/S'
   validExitCodes = @(0)
