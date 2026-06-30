@@ -1,22 +1,17 @@
 ﻿$ErrorActionPreference = "Stop";
-
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
-$packageArgs = @{
-  packageName    = $env:ChocolateyPackageName
-  fileFullPath   = Get-Item $toolsDir\*-win32.zip
-  fileFullPath64 = Get-Item $toolsDir\*-win64.zip
-  destination    = $toolsDir
-}
-Get-ChocolateyUnzip @packageArgs
+Install-ChocolateyZipPackage `
+    -PackageName $env:ChocolateyPackageName `
+    -Url "https://github.com/dnSpyEx/dnSpy/releases/latest/download/dnSpy-net-win32.zip" `
+    -Url64bit "https://github.com/dnSpyEx/dnSpy/releases/latest/download/dnSpy-net-win64.zip" `
+    -UnzipLocation $toolsDir
 
-# Zip not needed anymore
-Remove-Item $toolsDir\*.zip -Force -ea 0 
+$target = Get-ChildItem $toolsDir -Include "dnSpy.exe" -Recurse | Select-Object -First 1
+$shortcutDir = @{$true="CommonPrograms";$false="Programs"}[($PSVersionTable.PSVersion -gt "2.0.0.0")]
+$shortcut = Join-Path ([System.Environment]::GetFolderPath($shortcutDir)) "dnSpy.lnk"
 
-$file = Get-Childitem $toolsDir -Include dnSpy.exe -Recurse
-$startMenuPath = [Environment]::GetFolderPath("CommonPrograms")
-# Do not shim dnSpy GUI and add a shortcut for it
-New-Item "$file.ignore" -Type file -Force
+New-Item "$target.FullName.ignore" -Type File -Force
 Install-ChocolateyShortcut `
-  -ShortcutFilePath "$startMenuPath\$($file.BaseName).lnk" `
-  -TargetPath $file
+    -ShortcutFilePath $shortcut `
+    -TargetPath $target

@@ -1,5 +1,4 @@
-$ErrorActionPreference = "Stop";
+$shortcutDir = @{$true="CommonPrograms";$false="Programs"}[($PSVersionTable.PSVersion -gt "2.0.0.0")]
+$shortcut = Join-Path ([System.Environment]::GetFolderPath($shortcutDir)) "dnSpy.lnk"
 
-$startMenuPath = [Environment]::GetFolderPath("CommonPrograms")
-
-Remove-Item "$startMenuPath\dnSpy.lnk" -Force -ea 0
+Remove-Item -Path $shortcut -Force | Out-Null
